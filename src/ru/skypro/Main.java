@@ -7,29 +7,31 @@ public class Main {
         task1();
         task2();
         task3();
+
     }
 
     public static void task1() {
 
 
-        for (int i = 1; i < 11; i++) {
+        int i = 0;
+        while ( i < 10) { i++;
             System.out.print(" " + i);
         }
         System.out.println();
 
-        int i = 11;
-        while (i > 1) {
-            i--;
-            System.out.print(" " + i);
+
+        for (i = 10; i <= 10; i--) {
+            if (i > 0) {
+                System.out.print(" " + i);
+            }
         }
-        System.out.println();
     }
 
 
     public static void task2() {
 
 
-        for (int i = 3; i < 32; i += 7) {
+        for (int i = 3; i <= 31; i += 7) {
             System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
     }
@@ -41,10 +43,14 @@ public class Main {
         int nextPeriod = 100;
         int total = ourPeriod + nextPeriod;
 
-        for (int i = 0; i < total; i += 79) {
+        for (int i = 79; i < total; i += 79) {
             System.out.println(i);
         }
     }
+
+
+
+
 
 }
 
