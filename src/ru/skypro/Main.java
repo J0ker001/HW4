@@ -22,10 +22,8 @@ public class Main {
         System.out.println();
 
 
-        for (i = 10; i <= 10; i--) {
-            if (i >= 1) {
-                System.out.print(" " + i);
-            }
+        for (i = 10; i >= 1; i--) {
+            System.out.print(" " + i);
         }
         System.out.println();
     }
@@ -42,12 +40,15 @@ public class Main {
 
     public static void task3() {
 
-        int ourPeriod = 200;
-        int nextPeriod = 100;
-        int total = ourPeriod + nextPeriod;
+        int startYear = 1821;
+        int period = 300;
+        int totalPeriod = startYear + period;
 
-        for (int i = 79; i < total; i += 79) {
-            System.out.println(i);
+
+        for (int i = 1821; i < totalPeriod; i += 79) {
+            if (i > 1821) {
+                System.out.println(i);
+            }
         }
     }
 
