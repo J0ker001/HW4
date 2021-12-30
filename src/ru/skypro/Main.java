@@ -13,18 +13,21 @@ public class Main {
     public static void task1() {
 
 
-        int i = 0;
-        while ( i < 10) { i++;
+        int i = 1;
+
+        while (i <= 10) {
             System.out.print(" " + i);
+            i++;
         }
         System.out.println();
 
 
         for (i = 10; i <= 10; i--) {
-            if (i > 0) {
+            if (i >= 1) {
                 System.out.print(" " + i);
             }
         }
+        System.out.println();
     }
 
 
@@ -47,9 +50,6 @@ public class Main {
             System.out.println(i);
         }
     }
-
-
-
 
 
 }
